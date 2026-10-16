@@ -24,7 +24,7 @@ class PairingHistory:
     teammate_counts: dict[tuple[str, str], int]
 
     def count(self, first: str, second: str) -> int:
-        return self.teammate_counts.get(tuple(sorted((first, second))), 0)
+        pair = (first, second) if first <= second else (second, first)\n        return self.teammate_counts.get(pair, 0)
 
 
 @dataclass(frozen=True, slots=True)
