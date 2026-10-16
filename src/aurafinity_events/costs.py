@@ -1,7 +1,7 @@
 """Currency-safe event cost allocation."""
 
 from dataclasses import dataclass
-from typing import Iterable
+from collections.abc import Iterable
 
 
 @dataclass(frozen=True, slots=True)
