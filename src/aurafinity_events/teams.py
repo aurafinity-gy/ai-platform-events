@@ -1,8 +1,8 @@
 """Deterministic recreational-hockey team optimization."""
 
+from collections.abc import Iterable
 from dataclasses import dataclass
 from itertools import combinations
-from collections.abc import Iterable
 
 
 @dataclass(frozen=True, slots=True)
